@@ -14,7 +14,7 @@ alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %
 # ┌─[░░░]─[#talha]─[~/.ssh/hello]
 # └─$
 
-export GITAWAREPROMPT=./bash/git-aware-prompt
+export GITAWAREPROMPT=~/.mta-dotfiles/bash/git-aware-prompt
 source "${GITAWAREPROMPT}/main.sh"
 
 debian_chroot=${debian_chroot:+($debian_chroot)}

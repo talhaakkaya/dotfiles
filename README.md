@@ -3,7 +3,7 @@
 ```bash
 mkdir ~/.fonts
 
-ln -s ~/.mta-dotfiles/droid_sans_mono_for_powerline.otf ~/.fonts/Droid Sans Mono for Powerline.otf
+ln -s ~/.mta-dotfiles/droid_sans_mono_for_powerline.otf ~/.fonts/Droid\ Sans\ Mono\ for\ Powerline.otf
 
 # Append .bashrc file
 
