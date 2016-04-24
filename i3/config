@@ -1,0 +1,23 @@
+#### CUSTOM SETTINGS ####
+154 
+155 # Startup Applications
+156 exec --no-startup-id feh --bg-scale ~/Pictures/wallhaven-361449.jpg
+157 exec --no-startup-id nm-applet
+158 exec --no-startup-id nmcli nm wifi off
+159 
+160 
+161 # Custom Configurations
+162 focus_follows_mouse no
+163 
+164 # Keys
+165 
+166 bindsym XF86AudioRaiseVolume exec "amixer -D pulse sset Master '5%+'"
+167 bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master '5%-'"
+168 bindsym XF86AudioMute exec "amixer -D pulse set Master toggle"
+169 
+170 # Talha's Bar
+171 bar {
+172    workspace_buttons yes
+173    status_command i3status --config ~/.i3/i3status.conf
+174    # font pango:DroidMono 9
+175 }
