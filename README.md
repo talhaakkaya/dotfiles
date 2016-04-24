@@ -17,4 +17,7 @@ ln -s ~/.mta-dotfiles/vimrc ~/.vimrc
 
 ln -s ~/.mta-dotfiles/i3/i3status.conf ~/.i3/i3status.conf
 
+# Install vundle (vim package manager)
+git clone https://github.com/VundleVim/Vundle.vim ~/.vim/bundle/Vundle.vim
+
 ```
