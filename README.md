@@ -7,9 +7,7 @@ ln -s ~/.mta-dotfiles/droid_sans_mono_for_powerline.otf ~/.fonts/Droid\ Sans\ Mo
 
 # Append .bashrc file
 
-#...
 source ~/.mta-dotfiles/bashrc
-#...
 
 ln -s ~/.mta-dotfiles/vim ~/.vim
 
