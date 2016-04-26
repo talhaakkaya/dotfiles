@@ -149,6 +149,12 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
 
+"/
+"/ vim-emmet
+"/
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+
 
 "-------------Laravel-Specific--------------"
 nmap <Leader>lr :e app/Http/routes.php<cr>
