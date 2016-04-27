@@ -153,7 +153,8 @@ let g:airline_powerline_fonts = 1
 "/ vim-emmet
 "/
 let g:user_emmet_install_global = 0
-autocmd FileType html,css EmmetInstall
+autocmd FileType html,css,twig EmmetInstall
+autocmd BufNewFile,BufRead *.html.twig   set syntax=html
 
 
 "-------------Laravel-Specific--------------"
