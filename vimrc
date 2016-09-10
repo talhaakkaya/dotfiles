@@ -19,7 +19,7 @@ set laststatus=2
 "-------------Visuals--------------"
 colorscheme atom-dark-256
 set t_Co=256								"Use 256 colors. This is useful for Terminal Vim.
-set guifont=Fira\ Code:h17						"Set the default font family and size.
+"set guifont=Fira\ Code:h17						"Set the default font family and size.
 "set macligatures							"We want pretty symbols, when available.
 set guioptions-=e							"We don't want Gui tabs.
 "set linespace=16   						        "Macvim-specific line-height.
@@ -29,6 +29,8 @@ set guioptions-=l                                                       "Disable
 set guioptions-=L
 set guioptions-=r
 set guioptions-=R
+set guioptions-=T
+set guioptions-=m
 
 "We'll fake a custom left padding for each window.
 hi LineNr ctermbg=bg ctermfg=236 guibg=bg
@@ -42,7 +44,7 @@ hi vertsplit ctermbg=bg ctermfg=bg guifg=bg guibg=bg
 set cursorline
 
 " Set color for current line.
-hi CursorLine ctermbg=236 ctermfg=NONE guibg=236 guifg=NONE         
+hi CursorLine ctermbg=236 ctermfg=NONE guifg=NONE         
 
 
 
@@ -153,8 +155,8 @@ let g:airline_powerline_fonts = 1
 "/ vim-emmet
 "/
 let g:user_emmet_install_global = 0
-autocmd FileType html,css,twig EmmetInstall
-autocmd BufNewFile,BufRead *.html.twig   set syntax=html
+autocmd FileType html,css,twig,blade EmmetInstall
+autocmd BufNewFile,BufRead *.html.twig, *.blade.php   set syntax=html
 
 
 "-------------Laravel-Specific--------------"
